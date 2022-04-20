@@ -1,0 +1,130 @@
+.typo {
+  color: var(--bs-high-pure);
+}
+
+.typo-xxxs {
+  @extend .typo;
+  font: var(--pol-font-12-regular);
+  strong,
+  b {
+    font: var(--pol-font-12-bold);
+  }
+}
+
+.typo-xxs {
+  @extend .typo;
+  font: var(--pol-font-14-regular);
+  strong,
+  b {
+    font: var(--pol-font-14-bold);
+  }
+}
+
+.typo-xs {
+  @extend .typo;
+  font: var(--pol-font-16-regular);
+  strong,
+  b {
+    font: var(--pol-font-16-bold);
+  }
+}
+
+.typo-sm {
+  @extend .typo;
+  font: var(--pol-font-20-regular);
+  strong,
+  b {
+    font: var(--pol-font-20-bold);
+  }
+}
+
+.typo-md {
+  @extend .typo;
+  font: var(--pol-font-24-regular);
+  strong,
+  b {
+    font: var(--pol-font-24-bold);
+  }
+}
+
+.typo-lg {
+  @extend .typo;
+  font: var(--pol-font-32-regular);
+  strong,
+  b {
+    font: var(--pol-font-32-bold);
+  }
+}
+
+.typo-xl {
+  @extend .typo;
+  font: var(--pol-font-40-regular);
+  strong,
+  b {
+    font: var(--pol-font-40-bold);
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 48px;
+  }
+}
+
+.typo-xxl {
+  @extend .typo;
+  font: var(--pol-font-48-regular);
+  strong,
+  b {
+    font: var(--pol-font-48-bold);
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 56px;
+  }
+}
+
+.typo-xxxl {
+  @extend .typo;
+  font: var(--pol-font-64-regular);
+  strong,
+  b {
+    font: var(--pol-font-64-bold);
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 56px;
+  }
+}
+
+.typo-display {
+  @extend .typo;
+  font: var(--pol-font-80-regular);
+  strong,
+  b {
+    font: var(--pol-font-80-bold);
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 56px;
+  }
+}
+
+.typo-giant {
+  @extend .typo;
+  font: var(--pol-font-96-regular);
+  strong,
+  b {
+    font: var(--pol-font-96-bold);
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 56px;
+  }
+}
+
+.typo-neutral {
+  color: var(--bs-low-medium);
+}
+
+.gradient-text {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--bs-primary) 7.01%, var(--bs-gradient-color) 91.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

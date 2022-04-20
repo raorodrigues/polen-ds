@@ -1,0 +1,49 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { h } from '@stencil/core';
+import PolButton from '../../../dist/collection/components/pol-button/pol-button';
+
+<Meta title="Form/Button" component={PolButton} />
+
+# PolButton
+
+Let's define a story for our `Button` component:
+
+export const TemplatePrimary = args => <pol-button variation="primary" {...args}></pol-button>;
+export const TemplateSecondary = args => <pol-button variation="secondary" {...args}></pol-button>;
+export const TemplateOutlined = args => <pol-button variation="outline-light" {...args}></pol-button>;
+
+<Canvas>
+  <Story
+    name="primary"
+    args={{
+      text: 'Testando',
+      block: false,
+      pill: false,
+      disabled: false,
+    }}
+  >
+    {TemplatePrimary.bind({})}
+  </Story>
+  <Story
+    name="secondary"
+    args={{
+      text: 'Testando',
+      block: false,
+      pill: false,
+      disabled: false,
+    }}
+  >
+    {TemplateSecondary.bind({})}
+  </Story>
+  <Story
+    name="outlined"
+    args={{
+      text: 'Testando',
+      block: false,
+      pill: false,
+      disabled: false,
+    }}
+  >
+    {TemplateOutlined.bind({})}
+  </Story>
+</Canvas>

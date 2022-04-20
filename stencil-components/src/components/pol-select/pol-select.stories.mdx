@@ -1,0 +1,33 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { h } from '@stencil/core';
+import PolSelect from '../../../dist/collection/components/pol-select/pol-select';
+
+<Meta title="Form/Select" component={PolSelect} />
+
+# PolSelect
+
+Let's define a story for our `Select` component:
+
+export const Template = args => (
+  <pol-select {...args}>
+    <option value="" selected>
+      Escolha uma Opção
+    </option>
+    <option value="1">Valor 1</option>
+    <option value="2">Valor 2</option>
+    <option value="3">Valor 3</option>
+  </pol-select>
+);
+
+<Canvas>
+  <Story
+    name="select"
+    args={{
+      label: 'Label do select',
+      disabled: false,
+      required: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

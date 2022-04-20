@@ -1,0 +1,37 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { h } from '@stencil/core';
+import PolInput from '../../../dist/collection/components/pol-input/pol-input';
+
+<Meta title="Form/Input" component={PolInput} />
+
+# PolInput
+
+Let's define a story for our `Input` component:
+
+export const TemplateText = args => <pol-input type="text" {...args}></pol-input>;
+export const TemplateEmail = args => <pol-input type="email" {...args}></pol-input>;
+
+<Canvas>
+  <Story
+    name="text"
+    args={{
+      label: 'Label do input',
+      placeholder: 'Placeholder',
+      disabled: false,
+      required: true,
+    }}
+  >
+    {TemplateText.bind({})}
+  </Story>
+  <Story
+    name="email"
+    args={{
+      label: 'Label do input',
+      placeholder: 'Placeholder',
+      disabled: false,
+      required: true,
+    }}
+  >
+    {TemplateEmail.bind({})}
+  </Story>
+</Canvas>

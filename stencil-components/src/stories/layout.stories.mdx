@@ -1,0 +1,39 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+<Meta title="Base/Layout" />
+
+# Tipography
+
+Let's define a story for our `Layout`:
+
+<Canvas>
+  <Story name="grid">
+    <style>{`
+      *[class^="col"] {
+        border: 1px solid var(--bs-low-medium);
+        color: var(--bs-low-dark);
+        background-color: var(--bs-primary);
+      }
+    `}</style>
+    <div class="container">
+      <div class="row">
+        <div class="col p-3">Auto column | p-3</div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-6 p-3">2 columns | p-3</div>
+        <div class="col-md-6 p-3">2 columns | p-3</div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-4 p-3">3 columns | p-3</div>
+        <div class="col-md-4 p-3">3 columns | p-3</div>
+        <div class="col-md-4 p-3">3 columns | p-3</div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-3 p-3">4 columns | p-3</div>
+        <div class="col-md-3 p-3">4 columns | p-3</div>
+        <div class="col-md-3 p-3">4 columns | p-3</div>
+        <div class="col-md-3 p-3">4 columns | p-3</div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
