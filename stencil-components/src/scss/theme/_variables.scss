@@ -79,7 +79,7 @@ $custom-border-widths: (
 
 $border-widths: map-merge($border-widths, $custom-border-widths);
 
-$input-border-color: var(--bs-low-light);
+$input-border-color: var(--bs-high-dark);
 $border-radius: 4px;
 $border-radius-sm: 4px;
 $border-radius-lg: 4px;
