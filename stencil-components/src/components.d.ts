@@ -84,6 +84,14 @@ export namespace Components {
         "value": string;
     }
 }
+export interface PolInputCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLPolInputElement;
+}
+export interface PolSelectCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLPolSelectElement;
+}
 declare global {
     interface HTMLPolButtonElement extends Components.PolButton, HTMLStencilElement {
     }
@@ -147,7 +155,7 @@ declare namespace LocalJSX {
          */
         "label"?: string;
         "name"?: string;
-        "onChanged"?: (event: CustomEvent<string>) => void;
+        "onChanged"?: (event: PolInputCustomEvent<string>) => void;
         /**
           * Placeholder do input
          */
@@ -175,7 +183,7 @@ declare namespace LocalJSX {
           * Label do input - Obrigatório
          */
         "label"?: string;
-        "onChanged"?: (event: CustomEvent<string>) => void;
+        "onChanged"?: (event: PolSelectCustomEvent<string>) => void;
         /**
           * Define se o input fica somente leitura
          */

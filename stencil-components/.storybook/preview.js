@@ -1,5 +1,5 @@
 import { defineCustomElements } from '../dist/esm/loader';
-import "../dist/polen-web-components/polen-web-components.css";
+import "../dist/raor-polen-web-components/raor-polen-web-components.css";
 defineCustomElements();
 
 export const parameters = {
